@@ -1,0 +1,254 @@
+.sobre-mim {
+  display: grid;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+
+.curriculo {
+  max-width: 360px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.curriculo ul li {
+  line-height: 24px;
+}
+
+.qualificacoes {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  align-items: center;
+  border-radius: 24px;
+  background: linear-gradient(90deg, #000177 2.62%, #006bcb 93.38%);
+  color: white;
+}
+
+.qualificacoes-h2 {
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 50px;
+  margin: 0;
+}
+
+.qualificacoes-lista {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 10px 30px 30px 30px;
+}
+
+.experiencias {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  align-items: center;
+  border-radius: 24px;
+  background: linear-gradient(90deg, #000177 2.62%, #006bcb 93.38%);
+  color: white;
+}
+
+.experiencias-h2 {
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 50px;
+  margin: 0;
+}
+
+.experiencias-lista {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 10px 30px 30px 30px;
+}
+
+.experience {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 500px;
+  gap: 24px;
+}
+
+.experience p {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+  color: white;
+  text-align: center;
+}
+
+.experience {
+  flex-direction: column;
+}
+
+.experience-time {
+  flex-direction: column;
+}
+
+.experience .experience-language,
+.experience .experience-time {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.experience .experience-language .experience-unit {
+  width: 300px;
+  height: 30px;
+  border-radius: 24px;
+  border: 1px solid white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.experience .experience-language .experience-unit .experience-measure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 24px;
+  height: 30px;
+  border: 1px solid white;
+  background: linear-gradient(90deg, #000177 2.62%, #006bcb 93.38%);
+  color: white;
+  font-weight: 300;
+  text-align: center;
+  font-size: 12px;
+}
+
+.experience-h2 {
+  display: flex;
+}
+
+.experience-h2 h2 {
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 50px;
+  margin: 0;
+  color: white;
+}
+
+.img-estilo {
+  width: 24px;
+  height: 24px;
+  filter: grayscale(100%);
+}
+
+@keyframes measure-1 {
+  0% {
+    width: 0%;
+  }
+  75% {
+    width: 75%;
+  }
+}
+
+@keyframes measure-2 {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 75%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.measure1 {
+  width: 75%;
+  animation: measure-1 4s linear;
+}
+.measure2 {
+  width: 100%;
+  animation: measure-2 2s linear;
+}
+
+@media (min-width: 1008px) {
+  .curriculo ul li {
+    line-height: 50px;
+  }
+
+  .qualificacoes-lista {
+    font-size: 30px;
+    padding-left: 20px;
+  }
+
+  .experiencias-lista {
+    font-size: 30px;
+    padding-left: 20px;
+  }
+
+  h2.qualificacoes-h2 {
+    font-size: 50px;
+    line-height: 70px;
+  }
+
+  h2.experiencias-h2 {
+    font-size: 50px;
+    line-height: 70px;
+  }
+
+  .sobre-mim {
+    align-items: center;
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+  }
+
+  .curriculo {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: auto;
+    max-width: none;
+    max-height: none;
+    flex-direction: row;
+    border-radius: 24px;
+    background: linear-gradient(90deg, #000177 2.62%, #006bcb 93.38%);
+  }
+
+  .experiencias,
+  .qualificacoes {
+    max-height: none;
+    background: none;
+  }
+
+  .experience-h2 h2 {
+    font-size: 50px;
+    font-weight: 600px;
+  }
+
+  .experience {
+    align-items: center;
+    max-width: none;
+  }
+
+  .experience .experience-time {
+    gap: 24px;
+  }
+
+  .experience .experience-language img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .experience .experience-language {
+    gap: 24px;
+  }
+
+  .experience .experience-language .experience-unit {
+    width: 800px;
+    height: 50px;
+    border-radius: 24px;
+  }
+
+  .experience .experience-language .experience-unit .experience-measure {
+    height: 50px;
+    font-size: 15px;
+  }
+}
