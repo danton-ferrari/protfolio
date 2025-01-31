@@ -11,13 +11,16 @@ function Headers() {
 
   return (
     <div className="header hidden">
-      <div className="header-h1-1">
-        <h1>Danton Ferrari</h1>
+      <div className="header-h1s">
+        <div className="header-h1-1">
+          <h1>Danton Ferrari</h1>
+        </div>
+        <div className="header-h1-2">
+          <h1>
+            &lt;Software <span className="pular-linha">Developer/&gt;</span>
+          </h1>
+        </div>
       </div>
-      <div className="header-h1-2">
-        <h1>&lt;Software Developer/&gt;</h1>
-      </div>
-      <div className="nada"></div>
       <div className="header-img">
         <img id="eu" src={imgUrl} />
       </div>
