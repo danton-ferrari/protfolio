@@ -39,6 +39,10 @@
   margin: 10px 30px 30px 30px;
 }
 
+.qualificacoes-lista ul {
+  list-style: none;
+}
+
 .experiencias {
   display: flex;
   flex-direction: column;
@@ -60,6 +64,10 @@
   font-size: 14px;
   font-weight: 400;
   margin: 10px 30px 30px 30px;
+}
+
+.experiencias-lista ul {
+  list-style: none;
 }
 
 .experience {
@@ -167,19 +175,17 @@
   animation: measure-2 2s linear;
 }
 
-@media (min-width: 1008px) {
+@media (min-width: 1142px) {
   .curriculo ul li {
     line-height: 50px;
   }
 
   .qualificacoes-lista {
     font-size: 30px;
-    padding-left: 20px;
   }
 
   .experiencias-lista {
     font-size: 30px;
-    padding-left: 20px;
   }
 
   h2.qualificacoes-h2 {
@@ -193,8 +199,6 @@
   }
 
   .sobre-mim {
-    align-items: center;
-    display: grid;
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 2;
@@ -202,22 +206,50 @@
   }
 
   .curriculo {
+    display: flex;
+    gap: 100px;
     margin-left: 20px;
     margin-right: 20px;
-    padding: auto;
     max-width: none;
-    max-height: none;
     flex-direction: row;
-    border-radius: 24px;
-    background: linear-gradient(90deg, #000177 2.62%, #006bcb 93.38%);
   }
 
   .experiencias,
   .qualificacoes {
+    position: relative;
     max-height: none;
     background: none;
+    border-radius: 24px; /* Aplica o arredondamento nas bordas */
+    overflow: hidden; /* Garante que o conteúdo fique dentro das bordas arredondadas */
+    z-index: 1;
   }
 
+  .experiencias::before,
+  .qualificacoes::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 24px; /* Ajusta o raio da borda do pseudo-elemento */
+    border: 2px solid transparent; /* Cria uma borda inicial transparente */
+    background: linear-gradient(90deg, #000177 2.62%, #006bcb 93.38%);
+    z-index: -1; /* Coloca o pseudo-elemento atrás do conteúdo */
+    pointer-events: none; /* Evita que o pseudo-elemento interfira nas interações */
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0); /* Aplica a máscara para funcionar com borda arredondada */
+    -webkit-mask: linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0); /* Aplica a máscara para funcionar com borda arredondada no Safari */
+    mask-composite: exclude;
+    -webkit-mask-composite: xor;
+    mask-border: 2px solid transparent;
+  }
+
+  .experience {
+    display: none;
+  }
+
+  /* 
   .experience-h2 h2 {
     font-size: 50px;
     font-weight: 600px;
@@ -250,5 +282,5 @@
   .experience .experience-language .experience-unit .experience-measure {
     height: 50px;
     font-size: 15px;
-  }
+  } */
 }

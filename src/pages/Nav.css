@@ -38,7 +38,7 @@ nav.visible {
   gap: 16px;
 }
 
-@media (min-width: 1008px) {
+@media (min-width: 1142px) {
   .navbar.visible {
     justify-content: start;
   }

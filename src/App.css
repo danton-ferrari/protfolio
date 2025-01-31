@@ -5,7 +5,7 @@
   grid-template-rows: repeat(4, auto);
 }
 
-@media (min-width: 1008px) {
+@media (min-width: 1142px) {
   .container {
     margin: 0;
     padding-right: 25px;

@@ -112,7 +112,7 @@
   visibility: visible;
 }
 
-@media (min-width: 1008px) {
+@media (min-width: 1142px) {
   .services {
     display: grid;
     grid-column-start: 1;

@@ -164,7 +164,7 @@ footer {
   color: #000177;
 }
 
-@media (min-width: 1008px) {
+@media (min-width: 1142px) {
   footer {
     grid-column-start: 1;
     grid-column-end: 3;
