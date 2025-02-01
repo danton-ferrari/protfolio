@@ -7,14 +7,14 @@ footer {
   margin: 0;
 }
 
-.tooltip {
+.tooltiptext {
   display: none;
 }
 
 .footer {
   position: relative;
   width: 100%;
-  background: linear-gradient(#887177 20%, #2f4858 80%);
+  background: linear-gradient(#4b8078 20%, #1e3330 80%);
   min-height: 100px;
   padding-top: 30px;
   padding-bottom: 30px;

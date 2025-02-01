@@ -45,7 +45,7 @@ function Footer() {
           <ul className="social">
             <a href="https://www.instagram.com/danton.ferrari/" target="_blank">
               <li className="tooltip">
-                <i className="fa-brands fa-instagramgit add"></i>
+                <i className="fa-brands fa-instagram"></i>
                 <span className="tooltiptext">Instagram</span>
               </li>
             </a>
