@@ -10,7 +10,7 @@ nav {
   gap: 20px;
   padding: 0 20px;
   height: 50px;
-  background: linear-gradient(90deg, #000177 2.62%, #006bcb 93.38%);
+  background: linear-gradient(90deg, #2f4858 2.62%, #887177 93.38%);
   transition: 0.3s;
   z-index: 1;
 }

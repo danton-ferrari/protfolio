@@ -7,10 +7,14 @@ footer {
   margin: 0;
 }
 
+.tooltip {
+  display: none;
+}
+
 .footer {
   position: relative;
   width: 100%;
-  background: linear-gradient(#006bcb 20%, #000177 80%);
+  background: linear-gradient(#887177 20%, #2f4858 80%);
   min-height: 100px;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -161,7 +165,7 @@ footer {
 }
 
 .social li:hover i {
-  color: #000177;
+  color: #2f4858;
 }
 
 @media (min-width: 1142px) {
@@ -174,5 +178,40 @@ footer {
 
   .social {
     gap: 20px;
+  }
+
+  .tooltip {
+    position: relative;
+    display: inline-block;
+  }
+
+  .tooltip .tooltiptext {
+    display: flex;
+    visibility: hidden;
+    width: auto;
+    height: auto;
+    background-color: #191919;
+    color: #fff;
+    text-align: center;
+    border: 2px solid white;
+    padding: 3px;
+    font-weight: 100;
+    font-size: 1px;
+    white-space: nowrap;
+
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    transform: translate(-50%);
+
+    opacity: 0;
+    transition: none;
+  }
+
+  .tooltip:hover .tooltiptext {
+    text-decoration: none;
+    visibility: visible;
+    opacity: 1;
   }
 }

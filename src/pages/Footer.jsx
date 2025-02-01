@@ -44,50 +44,57 @@ function Footer() {
         <div className="col col-social">
           <ul className="social">
             <a href="https://www.instagram.com/danton.ferrari/" target="_blank">
-              <li>
-                <i className="fa-brands fa-instagram"></i>
+              <li className="tooltip">
+                <i className="fa-brands fa-instagramgit add"></i>
+                <span className="tooltiptext">Instagram</span>
               </li>
             </a>
             <a
               href="https://www.linkedin.com/in/danton-ferrari/"
               target="_blank"
             >
-              <li>
+              <li className="tooltip">
                 <i className="fa-brands fa-linkedin-in"></i>
+                <span className="tooltiptext">Linkedin</span>
               </li>
             </a>
             <a href="https://twitter.com/FerrariDanton" target="_blank">
-              <li>
+              <li className="tooltip">
                 <i className="fa-brands fa-x-twitter"></i>
+                <span className="tooltiptext">Twitter</span>
               </li>
             </a>
             <a href="https://github.com/danton-ferrari" target="_blank">
-              <li>
+              <li className="tooltip">
                 <i className="fa-brands fa-github"></i>
+                <span className="tooltiptext">GitHub</span>
               </li>
             </a>
-            <li>
+            <li className="tooltip">
               <a href="mailto:dgabrielferrari7@gmail.com" target="_blank">
-                <img src={imgUrls.email} alt="" />
+                <img src={imgUrls.email} alt="Email" />
+                <span className="tooltiptext">Email</span>
               </a>
             </li>
-            <li>
+            <li className="tooltip">
               <a
                 id="pdfDownloadLink"
                 href={pdf}
                 target="_blank"
                 download="../components/dantonFerrariCV.pdf"
               >
-                <img src={imgUrls.download} alt="" />
+                <img src={imgUrls.download} alt="Download CV" />
+                <span className="tooltiptext">Baixe meu currículo</span>
               </a>
             </li>
-            <li>
+            <li className="tooltip">
               <a
                 className="tel"
                 href="https://wa.me/55051980363331"
                 target="_blank"
               >
-                <img src={imgUrls.whats} alt="" />
+                <img src={imgUrls.whats} alt="WhatsApp" />
+                <span className="tooltiptext">WhatsApp</span>
               </a>
             </li>
           </ul>
