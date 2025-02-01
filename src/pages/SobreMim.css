@@ -213,19 +213,20 @@
 
   .curriculo {
     display: flex;
-    gap: 100px;
+    /* gap: 100px; */
     margin-left: 20px;
     margin-right: 20px;
     max-width: none;
-    flex-direction: row;
+    flex-direction: column;
   }
 
   .experiencias,
   .qualificacoes {
     position: relative;
     max-height: none;
-    box-shadow: 5px 5px 8px #000000;
-    border-radius: 0;
+    box-shadow: 10px 10px 8px #000000;
+    border-radius: 24px;
+    margin-bottom: 24px;
     /*overflow: hidden;  Garante que o conteúdo fique dentro das bordas arredondadas */
     /* z-index: 1; */
   }
