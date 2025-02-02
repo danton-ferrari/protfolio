@@ -27,7 +27,7 @@ function SobreMim() {
               <li>
                 Análise e Desenvolvimento de Sistemas - Uninter em andamento;
               </li>
-              <li>Desenhista Mecânico 800 horas - Senai;</li>
+              {/* <li>Desenhista Mecânico 800 horas - Senai;</li> */}
               <li>Lógica de Programação 60 horas - Senac;</li>
               <li>Banco de Dados 40 horas - Plataforma Mundi - IFSul;</li>
               <li>Lógica de Programação 14 horas - Senai;</li>
