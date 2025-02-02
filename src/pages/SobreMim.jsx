@@ -21,7 +21,7 @@ function SobreMim() {
     <div id="sobre-mim" className="sobre-mim">
       <div className="curriculo hidden">
         <div className="qualificacoes">
-          <h2 className="qualificacoes-h2">Qualificações</h2>
+          <h2 className="qualificacoes-h2">QUALIFICAÇÕES</h2>
           <div className="qualificacoes-lista">
             <ul>
               <li>
@@ -36,7 +36,7 @@ function SobreMim() {
           </div>
         </div>
         <div className="experiencias">
-          <h2 className="experiencias-h2">Experiências</h2>
+          <h2 className="experiencias-h2">EXPERIÊNCIAS</h2>
           <div className="experiencias-lista">
             <ul>
               <li>
