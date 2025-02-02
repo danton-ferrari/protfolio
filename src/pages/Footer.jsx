@@ -28,27 +28,27 @@ function Footer() {
         <div className="col footerbar">
           <ul>
             <li>
-              <a href="#header">Home</a>
+              <a href="#header">Início</a>
             </li>
             <li>
-              <a href="#sobre-mim">About</a>
+              <a href="#sobre-mim">Sobre</a>
             </li>
             <li>
-              <a href="#services">Services</a>
+              <a href="#services">Serviços</a>
             </li>
             <li>
-              <a href="#footer">Contact</a>
+              <a href="#footer">Contato</a>
             </li>
           </ul>
         </div>
         <div className="col col-social">
           <ul className="social">
-            <a href="https://www.instagram.com/danton.ferrari/" target="_blank">
+            {/* <a href="https://www.instagram.com/danton.ferrari/" target="_blank">
               <li className="tooltip">
                 <i className="fa-brands fa-instagram"></i>
                 <span className="tooltiptext">Instagram</span>
               </li>
-            </a>
+            </a> */}
             <a
               href="https://www.linkedin.com/in/danton-ferrari/"
               target="_blank"
@@ -58,12 +58,12 @@ function Footer() {
                 <span className="tooltiptext">Linkedin</span>
               </li>
             </a>
-            <a href="https://twitter.com/FerrariDanton" target="_blank">
+            {/* <a href="https://twitter.com/FerrariDanton" target="_blank">
               <li className="tooltip">
                 <i className="fa-brands fa-x-twitter"></i>
                 <span className="tooltiptext">Twitter</span>
               </li>
-            </a>
+            </a> */}
             <a href="https://github.com/danton-ferrari" target="_blank">
               <li className="tooltip">
                 <i className="fa-brands fa-github"></i>
@@ -81,7 +81,7 @@ function Footer() {
                 id="pdfDownloadLink"
                 href={pdf}
                 target="_blank"
-                download="../components/dantonFerrariCV.pdf"
+                download="Currículo Danton Ferrari 2025"
               >
                 <img src={imgUrls.download} alt="Download CV" />
                 <span className="tooltiptext">Baixe meu currículo</span>
