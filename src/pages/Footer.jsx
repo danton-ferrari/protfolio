@@ -1,21 +1,8 @@
+// import { Mail } from "lucide-react";
 import "./Footer.css";
-import { useState, useEffect } from "react";
-import emailImage from "../components/o-email.png";
-import downloadImage from "../components/download-direto.png";
-import whatsImage from "../components/whatapp_icone.png";
 import pdf from "../components/dantonFerrariCV.pdf";
 
 function Footer() {
-  const [imgUrls, setImgUrls] = useState({});
-
-  useEffect(() => {
-    setImgUrls({
-      email: emailImage,
-      download: downloadImage,
-      whats: whatsImage,
-    });
-  }, []);
-
   return (
     <div className="footer">
       <div className="waves">
@@ -43,12 +30,6 @@ function Footer() {
         </div>
         <div className="col col-social">
           <ul className="social">
-            {/* <a href="https://www.instagram.com/danton.ferrari/" target="_blank">
-              <li className="tooltip">
-                <i className="fa-brands fa-instagram"></i>
-                <span className="tooltiptext">Instagram</span>
-              </li>
-            </a> */}
             <a
               href="https://www.linkedin.com/in/danton-ferrari/"
               target="_blank"
@@ -58,12 +39,6 @@ function Footer() {
                 <span className="tooltiptext">Linkedin</span>
               </li>
             </a>
-            {/* <a href="https://twitter.com/FerrariDanton" target="_blank">
-              <li className="tooltip">
-                <i className="fa-brands fa-x-twitter"></i>
-                <span className="tooltiptext">Twitter</span>
-              </li>
-            </a> */}
             <a href="https://github.com/danton-ferrari" target="_blank">
               <li className="tooltip">
                 <i className="fa-brands fa-github"></i>
@@ -72,7 +47,7 @@ function Footer() {
             </a>
             <li className="tooltip">
               <a href="mailto:dgabrielferrari7@gmail.com" target="_blank">
-                <img src={imgUrls.email} alt="Email" />
+                <i className="fa-solid fa-envelope"></i>
                 <span className="tooltiptext">Email</span>
               </a>
             </li>
@@ -83,7 +58,7 @@ function Footer() {
                 target="_blank"
                 download="Currículo Danton Ferrari 2025"
               >
-                <img src={imgUrls.download} alt="Download CV" />
+                <i className="fa-solid fa-file"></i>
                 <span className="tooltiptext">Baixe meu currículo</span>
               </a>
             </li>
@@ -93,7 +68,7 @@ function Footer() {
                 href="https://wa.me/55051980363331"
                 target="_blank"
               >
-                <img src={imgUrls.whats} alt="WhatsApp" />
+                <i className="fa-brands fa-whatsapp"></i>
                 <span className="tooltiptext">WhatsApp</span>
               </a>
             </li>
